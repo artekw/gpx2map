@@ -1,0 +1,10 @@
+
+http://deparkes.co.uk/2016/06/03/plot-lines-in-folium/
+
+http://stackoverflow.com/questions/36137161/using-flask-to-embed-a-local-html-page
+https://www.reddit.com/r/flask/comments/4bcrd8/use_flask_to_imbed_an_iframe_into_my_html_related/
+
+http://leafletjs.com/plugins.html
+http://geojson.org/
+https://docs.mongodb.com/manual/tutorial/calculate-distances-using-spherical-geometry-with-2d-geospatial-indexes/
+

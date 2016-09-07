@@ -1,0 +1,10 @@
+ToDo:
+* cofanie z mapy do strony głównej
+* archiwum map
+* template formatki do uploudowania
+* requirements apki
+* iframe zamiast ładowania wygenerowanej strony ?!
+* kolor i szerokość trasy do wyboru przy upload gpx'a
+* statystyka
+* bug - jak są tylko punkty wywala error - rysuje tylko z tras
+* http://flask.pocoo.org/docs/0.11/patterns/flashing/

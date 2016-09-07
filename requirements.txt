@@ -1,0 +1,5 @@
+Flask (0.11.1)
+folium (0.2.1)
+gpxpy (1.1.1)
+mplleaflet (0.0.5)
+numpy (1.11.1)

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+	<form action="" method=post enctype=multipart/form-data>
+		<p>
+			<input type=file name=file>
+		</p>
+		
+		<p>
+		<label for="color"><b>Kolor:</b></label> <br>
+		<input type="radio" name="color" id="red" value="red"> Czerwony </input><br>
+		<input type="radio" name="color" id="green" value="green"> Zielony </input><br>
+		<input type="radio" name="color" id="orange" value="orange"> Pomarańczowy </input><br>
+		</p>
+		<p>
+		<label for="color"><b>Grubość:</b></label> <br>
+		<input type="radio" name="width" id="onepx"> 1px </input><br>
+		<input type="radio" name="width" id="dwopx"> 2px </input><br>
+		<input type="radio" name="width" id="threepx"> 3px </input><br>
+		</p>
+		<p>
+			<input type=submit value=Wyślij>
+		</p>
+	</form>
+{% endblock %}
