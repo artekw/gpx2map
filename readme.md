@@ -4,7 +4,7 @@ Aplikacja wykreśla trasę z pliku GPX na mapie OSM.
 
 ## Instalacja
 
-    $ git clone
+    $ git clone https://github.com/artekw/gpx2map
     $ cd gpx2map
     $ mkdir maps; mkdir uploads
     $ chmod +x gpx2map.py
