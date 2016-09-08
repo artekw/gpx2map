@@ -16,6 +16,7 @@ __author__ = "Artur Wronowski"
 
 
 UPLOAD_FOLDER = 'uploads'
+MAP_FOLDER = 'maps'
 ALLOWED_EXTENSIONS = set(['gpx'])
 
 app = Flask(__name__)
@@ -55,14 +56,20 @@ def allowed_file(filename):
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
 	"""formatka upload pliku"""
+	# sprawdzanie czy katalogi istnieją
+	if not os.path.exists(UPLOAD_FOLDER):
+		os.makedirs(UPLOAD_FOLDER)
+
+	if not os.path.exists(MAP_FOLDER):
+		os.makedirs(MAP_FOLDER)
+
 	if request.method == 'POST':
 		# check if the post request has the file part
 		if 'file' not in request.files:
 			flash('No file part')
 			return redirect(request.url)
 		file = request.files['file']
-		# if user does not select file, browser also
-		# submit a empty part without filename
+		# jeżeli user nie wybrał pliku
 		if file.filename == '':
 			flash('Nie wybrano pliku')
 			return redirect(request.url)
@@ -70,7 +77,6 @@ def upload_file():
 			filename = secure_filename(file.filename)
 			file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 			genmap((os.path.join(app.config['UPLOAD_FOLDER'], filename)))
-			#return redirect(url_for('upload_file', filename=filename))
 			return redirect(url_for('show_map'))
 
 	return render_template('index.html')
