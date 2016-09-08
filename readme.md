@@ -21,7 +21,6 @@ Plik Dockerfile napisany jest dla urządzeni opartych o architekturę armhf tj. 
 
 
 ## Todo
- - tworzenie kabalogów "maps" i "uploads"
  - statystyka trasy (długość, czas, wzniosy, spadki, prędkość)
  - dockerfile
  - cofanie z mapy do strony głównej
