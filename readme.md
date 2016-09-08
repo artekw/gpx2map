@@ -8,7 +8,18 @@ Aplikacja wykreśla trasę z pliku GPX na mapie OSM.
     $ cd gpx2map
     $ mkdir maps; mkdir uploads
     $ chmod +x gpx2map.py
-   
+
+
+## Aplikacja w kontenerze Dockera
+
+Plik Dockerfile napisany jest dla urządzeni opartych o architekturę armhf tj. CHIP, Raspberry Pi i inne. Dla x86 wymaga modyfikacji sekcji 'FROM'.
+
+	$ git clone https://github.com/artekw/gpx2map
+	$ cd gpx2map
+    $ docker build -t gpx2map:latest .
+    $ docker run -d -p 5000:5000 gpx2map
+
+
 ## Todo
  - tworzenie kabalogów "maps" i "uploads"
  - statystyka trasy (długość, czas, wzniosy, spadki, prędkość)
