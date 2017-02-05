@@ -108,3 +108,5 @@ pip-selfcheck.json
 # this_app
 maps/
 uploads/
+tests/maps
+tests/uploads
